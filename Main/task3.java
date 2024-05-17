@@ -1,4 +1,4 @@
-package tasks;
+package Main;
 
 public class task3 {
     public static void printColor() {

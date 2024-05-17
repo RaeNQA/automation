@@ -1,4 +1,4 @@
-package tasks;
+package Main;
 
 public class task4 {
     public static void compareNumbers(){

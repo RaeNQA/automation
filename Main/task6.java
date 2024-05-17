@@ -1,7 +1,7 @@
-package tasks;
+package Main;
 
 public class task6 {
-    public static void main(String[] args) {
+    public static void main() {
         int number = 10;
         checkNumber(number);
     }

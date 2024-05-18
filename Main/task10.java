@@ -9,5 +9,6 @@ public class task10 {
         for (int value : arr) {
             System.out.print(value + " ");
         }
+        System.out.println("");
     }
 }

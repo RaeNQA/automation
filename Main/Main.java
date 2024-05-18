@@ -1,4 +1,5 @@
 package Main;
+
 public class Main {
     public static void main(String[] args) {
         task1.printThreeWords();
@@ -11,7 +12,9 @@ public class Main {
         task8.main();
         task9.main();
         task10.main();
-
-
+        task11.main();
+        task12.main();
+        task13.main();
+        task14.main();
     }
 }

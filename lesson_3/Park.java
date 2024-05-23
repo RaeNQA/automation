@@ -1,7 +1,5 @@
 package lesson_3;
 
-import java.sql.Time;
-
 public class Park {
     public static class Attractions {
         private String attracName;
@@ -24,7 +22,6 @@ public class Park {
             Attractions attDisplay = new Attractions("Качели", "08:00 - 20:00", 120);
             attDisplay.Displaying();
         }
-
 
     }
 }

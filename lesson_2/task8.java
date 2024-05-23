@@ -1,4 +1,4 @@
-package Main;
+package lesson_2;
 
 public class task8 {
     public static void main() {

@@ -1,34 +1,34 @@
 package lesson_4.task2;
 
 class Krug implements Calculate {
-    private double radius;
-    private String color;
-    private String borderColor;
+    private final double r;
+    private final String fColor;
+    private final String bColor;
 
-    public Krug (double radius, String fillColor, String borderColor) {
-        this.radius = radius;
-        this.color = fillColor;
-        this.borderColor = borderColor;
+    public Krug (double r, String fColor, String bColor) {
+        this.r = r;
+        this.fColor = fColor;
+        this.bColor = bColor;
     }
 
     @Override
-    public double calculatePerimeter() {
-        return 2 * Math.PI * radius;
+    public double cPerim() {
+        return 2 * 3.14 * r;
     }
 
     @Override
-    public double calculateArea() {
-        return Math.PI * radius * radius;
+    public double cArea() {
+        return 3.14 * r * r;
     }
 
     @Override
-    public String getColor() {
-        return color;
+    public String getfColor() {
+        return fColor;
     }
 
     @Override
-    public String getBorderColor() {
-        return borderColor;
+    public String getbColor() {
+        return bColor;
     }
 }
 

@@ -2,20 +2,32 @@ package lesson_4.task1;
 
 class Cat extends Animals {
     private boolean satiety;
+    private static int count = 0;
+
+    public static int getCount() {
+        return Cat.count;
+    }
 
     public Cat(String petName) {
         super(petName);
         runLimit = 200;
         swimLimit = 0;
         satiety = false;
+        Cat.count += 1;
+
     }
 
-    public void eat(int foodAmount) {
+    public void eat(Food food, int foodAmount) {
         if (foodAmount <= 0) {
-            System.out.println("Нельзя добавить отрицательное количество еды.");
+            System.out.println("Нельзя съесть отрицательное количество еды.");
         } else {
-            System.out.println("Кот " + petName + " покушал.");
-            satiety = true;
+            // boolean successEat = food.eat(foodAmount);
+            satiety = food.eat(foodAmount);
+            if (satiety) {
+                System.out.println("Кот " + petName + " сыт");
+            } else {
+                System.out.println("Кот " + petName + " голоден");
+            }
         }
     }
 

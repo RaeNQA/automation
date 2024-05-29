@@ -19,4 +19,14 @@ class Food {
     public int getFoodAmount() {
         return foodAmount;
     }
+
+    public boolean eat(int amount) {
+        if (foodAmount < amount) {
+            System.out.println("В миске недостаточно еды.");
+            return false;
+        } else {
+            foodAmount -= amount;
+            return true;
+        }
+    }
 }

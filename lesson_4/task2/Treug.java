@@ -1,5 +1,5 @@
 package lesson_4.task2;
-//
+//Класс для рассчета параметров треугольника
 class Treug implements Calculate {
     private final double s1;
     private final double s2;

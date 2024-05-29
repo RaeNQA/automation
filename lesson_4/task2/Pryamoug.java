@@ -1,5 +1,5 @@
 package lesson_4.task2;
-
+// Класс для рассчета параметров прямоугольника
 class Pryamoug implements Calculate {
     private final double w;
     private final double h;

@@ -1,8 +1,8 @@
 package lesson_4.task2;
 
 interface Calculate {
-    double cPerim();
-    double cArea();
-    String getfColor();
-    String getbColor();
+    double cPerim();         // Расчет периметра
+    double cArea();          // Расчет площади
+    String getfColor();         // Запрос цвета заливки
+    String getbColor();         // Запрос цвета границы
 }

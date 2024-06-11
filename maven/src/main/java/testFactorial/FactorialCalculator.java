@@ -15,7 +15,7 @@ public class FactorialCalculator {
         return a + b;
     }
     public static void main(String[] args) {
-        int number = 24;
+        int number = 10;
 
 
         if (number < 0) {

@@ -14,8 +14,8 @@ public class Main {
         directory.add("Johnson", "13-33-553-25-17");
         directory.add("Smith", "32-33-723-65-63");
 
-        directory.getPhone("Smith");
-        directory.getPhone("Johnson");
-        directory.getPhone("Petrov");
+        directory.getLastName("Smith");
+        directory.getLastName("Johnson");
+        directory.getLastName("Petrov");
     }
 }

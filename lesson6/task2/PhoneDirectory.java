@@ -20,7 +20,7 @@ public class PhoneDirectory {
         return directory.getOrDefault(lastName, new ArrayList<>());
     }
 
-    public void getPhone(String lastName) {
+    public void getLastName(String lastName) {
         List<String> numbers = get(lastName);
         System.out.println("Numbers for last name " + lastName + ": " + String.join(", ", numbers));
     }

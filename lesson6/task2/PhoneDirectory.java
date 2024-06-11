@@ -13,16 +13,15 @@ public class PhoneDirectory {
     }
 
     public void add(String lastName, String phoneNumber) {
-        if (directory.containsKey(lastName)) {
-            directory.get(lastName).add(phoneNumber);
-        } else {
-            List<String> phoneNumbers = new ArrayList<>();
-            phoneNumbers.add(phoneNumber);
-            directory.put(lastName, phoneNumbers);
-        }
+        directory.computeIfAbsent(lastName, k -> new ArrayList<>()).add(phoneNumber);
     }
 
     public List<String> get(String lastName) {
         return directory.getOrDefault(lastName, new ArrayList<>());
+    }
+
+    public void searchForLastName(String lastName) {
+        List<String> numbers = get(lastName);
+        System.out.println("Numbers for last name " + lastName + ": " + String.join(", ", numbers));
     }
 }

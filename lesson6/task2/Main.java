@@ -1,7 +1,5 @@
 package lesson6.task2;
 
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         PhoneDirectory directory = new PhoneDirectory();
@@ -16,12 +14,8 @@ public class Main {
         directory.add("Johnson", "13-33-553-25-17");
         directory.add("Smith", "32-33-723-65-63");
 
-        printNumbers(directory.get("Smith"), "Smith");
-        printNumbers(directory.get("Johnson"), "Johnson");
-        printNumbers(directory.get("Petrov"), "Petrov");
-    }
-
-    private static void printNumbers(List<String> numbers, String lastName) {
-        System.out.println("Numbers for last name " + lastName + ": " + numbers);
+        directory.searchForLastName("Smith");
+        directory.searchForLastName("Johnson");
+        directory.searchForLastName("Petrov");
     }
 }

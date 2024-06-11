@@ -34,11 +34,15 @@ public class AnotationsTest {
         System.out.println("afterall выполняется 1 раз после всех тестов");
     }
 
-    @Nested
+    @Nested             // вложенные тесты. создается новый класс внутрь можно положить тесты
     public class InnerClassTest {
         @Test
         public void test22() {
-            System.out.println("Сам test22 inner тест из внутреннего класса");
+            System.out.println("test22 inner");
+        }
+        @Test
+        public void test() {
+            System.out.println("test inner");
         }
     }
 }

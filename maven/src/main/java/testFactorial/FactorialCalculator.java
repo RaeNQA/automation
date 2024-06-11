@@ -11,7 +11,9 @@ public class FactorialCalculator {
             return n * factorial(n - 1);
         }
     }
-
+    public int add(int a, int b) {
+        return a + b;
+    }
     public static void main(String[] args) {
         int number = 24;
 
